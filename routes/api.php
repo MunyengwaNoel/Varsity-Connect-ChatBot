@@ -6,5 +6,3 @@ use App\Http\Controllers\WhatsAppController;
 
 Route::post('/whatsapp/webhook', [WhatsAppController::class, 'handle']);
 Route::get('/whatsapp/webhook', [WhatsAppController::class, 'verify']);
-
-Route::get('/whatsapp/credentials',[WhatsAppController::class,'getCredentials']);
