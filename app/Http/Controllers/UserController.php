@@ -10,9 +10,10 @@ class UserController extends Controller
         return "Welcome to RentOra Housing.\n1. Login\n2. Register";
     }
     public static function register(Request $request):array{
-        $data = ["message"=>"Enter Your      Name:",
-            "next"=> 
-        ]
+        $data = ["message"=>"Enter Your Name:",
+            "next"=> ""
+    ];
+    return $data;
     }
 
     public static function login(){
